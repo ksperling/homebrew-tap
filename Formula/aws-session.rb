@@ -1,13 +1,16 @@
 class AwsSession < Formula
-  desc ""
+  desc "Manage shell sessions with temporary AWS credentials"
   homepage "https://github.com/ksperling/aws-session"
-  url "https://github.com/ksperling/aws-session/archive/v1.1.0.tar.gz"
-  sha256 "412b59daeed6e4e0c05560ffe8e87224f576a27ac42475b5dc270cc1aa6adb54"
+  head "https://github.com/ksperling/aws-session.git"
+
+  url "https://github.com/ksperling/aws-session/archive/v1.2.0.tar.gz"
+  sha256 "3a3e44d4939a7c99a4decdae2d688b6391fc97e41c574a0e0f9fc802ea1a8d63"
 
   depends_on "awscli" => :run
 
   def install
     bin.install "aws-session"
+    inreplace bin/"aws-session", /^version=HEAD$/, "version=#{self.version}"
   end
 
   test do
