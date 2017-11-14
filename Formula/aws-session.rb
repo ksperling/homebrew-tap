@@ -3,8 +3,8 @@ class AwsSession < Formula
   homepage "https://github.com/ksperling/aws-session"
   head "https://github.com/ksperling/aws-session.git"
 
-  url "https://github.com/ksperling/aws-session/archive/v1.2.0.tar.gz"
-  sha256 "3a3e44d4939a7c99a4decdae2d688b6391fc97e41c574a0e0f9fc802ea1a8d63"
+  url "https://github.com/ksperling/aws-session/archive/v1.3.0.tar.gz"
+  sha256 "1d03d4b1ad941d8204bc61009e46a3f32a92c180b95613d4a7a9b602eebd5d77"
 
   depends_on "awscli" => :run
 
