@@ -6,7 +6,7 @@ class AwsSession < Formula
   url "https://github.com/ksperling/aws-session/archive/v1.3.0.tar.gz"
   sha256 "1d03d4b1ad941d8204bc61009e46a3f32a92c180b95613d4a7a9b602eebd5d77"
 
-  depends_on "awscli" => :run
+  depends_on "awscli"
 
   def install
     bin.install "aws-session"
